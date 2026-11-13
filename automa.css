@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+.bg-container {
+    background-image: url("https://ik.imagekit.io/es6uep56h/Midnight%20Gold%20Wave%20Elegance.png");
+
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pa {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contain {
+    width: 400px;
+    min-height: 300px;
+    padding: 30px;
+    background: rgba(10, 30, 60, 0.85);
+    border: 2px solid #e6bd62;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 0 10px #ffd76a,
+        0 0 25px rgba(255, 193, 55, 0.5),
+        0 0 50px rgba(255, 193, 55, 0.25);
+}
+.im {
+    display: block;
+    width: 75px;
+    height: 65px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #ffd76a;
+}
+.login-title {
+    color: #ffd76a;
+    font-family: "Roboto";
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.subtitle {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+}
+.form-group label {
+    color: #ffd76a;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.form-group input {
+    width: 100%;
+    height: 43px;
+    padding: 10px 12px;
+    border: 1px solid #d6b75e;
+    border-radius: 9px;
+    background-color: #ffffff;
+    font-family: "Roboto";
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+.form-group input:focus {
+    border: 2px solid #ffd76a;
+    box-shadow:
+        0 0 10px rgba(255, 215, 106, 0.5);
+}
+.button {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    margin: 20px auto 0;
+    background: linear-gradient(
+        90deg,
+        #ffe28a,
+        #d99b32
+    );
+    color: #071a36;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 15px #ffd76a;
+}
+@media (max-width: 575.98px) {
+    .bg-container {
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+    }
+    .pa {
+        min-height: 100vh;
+        padding: 15px;
+    }
+    .contain {
+        width: 100%;
+        max-width: 370px;
+        min-height: 300px;
+        padding: 25px 20px;
+    }
+    .login-title {
+        font-size: 24px;
+    }
+    .form-group label {
+        font-size: 15px;
+    }
+    .button {
+        min-height: 43px;
+    }
+}
